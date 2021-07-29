@@ -1,0 +1,205 @@
+/* reset css */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng( kiểu chữ...)
+*/
+
+#main{
+
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1; /* giu cho header noi len slider*/
+}
+
+#nav ul {
+    display: inline-block;
+}
+
+#nav li{
+    display: inline-block; /*các chữ trên 1 dòng*/
+    position: relative; 
+   
+    
+}
+#nav > ul > li > a{
+    color: #fff;
+    text-transform: uppercase; /*in hoa*/ 
+
+}
+
+#nav li a{
+    color: #fff;
+    text-decoration:none;
+    line-height: 46px; /*căn giữa chữ*/
+    padding: 0 24px; /*căn khoảng cách giữa các chữ*/
+    display: inline-block;
+}
+
+
+#nav > li:hover > a,
+#nav .sub_nav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li:hover{
+    color: #000;
+    background-color: #ccc;
+}
+#nav li:hover .sub_nav{
+    display: block;
+}
+
+#nav .sub_nav{
+    display: none;
+    top: 46;
+    min-width: 160;
+    position: absolute; /*con của thẻ na li ( con của More )*/
+    background-color: #fff;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.3) ;
+
+    
+}
+#nav .sub_nav li {
+    width: 100%;
+}
+#nav .sub_nav a{
+    color: #000; /*chữ màu đen*/
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav .icon{
+    font-size: 12px;
+}
+
+#header .search{
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+    
+}
+#header .search:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+
+#slider{
+    position: relative;
+    min-height: 500px;
+    background-color: #333;
+    margin-top: 46px;
+    padding-top: 50%; /*50% cua chinh no*/
+    background: url('/ONE_PAGE/assets/img/Slider/slider1.jpg') top center / cover no-repeat ;
+
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width:  100%;
+    text-align: center;
+}
+
+
+
+#Content{
+    height: 1000px;
+    padding: 64px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 915px;
+     
+    
+}
+
+#Content .section{
+
+}
+
+#Content .section-heading{
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+    
+}
+
+
+#Content .section-sub-heading{
+   font-style: italic;
+   margin-top: 25px;
+   opacity: 0.6;
+   font-size: 15px;
+
+}
+
+#Content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: justify;
+   
+}
+
+#Content .member-list{
+    text-align: center;
+    clear: both;
+    padding: 32px 0px;
+
+}
+
+#Content .member-item{
+    float: left;
+    width: 33.33333%;
+    
+}
+
+#Content .member-name{
+    margin-top: 15px;
+
+    
+}
+
+#Content .member-img{
+    width: 60%;
+    margin-top: 15px;
+    border-radius: 4px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+#footer{
+
+    
+}
